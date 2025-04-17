@@ -1,0 +1,143 @@
+:root{ 
+    --branco: #FFFFFF;
+    --cinza: #C0C0C0;
+    --azul-botao: #167BF7;
+    --fundo-de-tela: #000000;
+    --botao-efeito: #74aef4;
+    --font-family: "Inter", sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--fundo-de-tela);
+    color: var(--branco);
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-weight: 400;
+}
+.principal {
+    background-image: url(./assets/Background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+    
+}
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+}   
+
+.container__elementos {
+    margin: 8em;
+
+}
+.container__imagem {
+    margin: 2em 0 3em 0; 
+}
+
+.container__botao{
+    background-color: var(--azul-botao);
+    color: var(--branco);
+    border-radius: 5px;
+    padding: 1em;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+.container__botao:hover{
+    background-color: var(--botao-efeito);
+    color: var(--branco);
+    border: 2px solid var(--azul-botao);
+}
+
+.botao_secundario{
+    background-color: transparent;
+    border: 2px solid var(--branco);
+}
+
+.container__texto {
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+.texto_menor {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--cinza);
+}
+
+.secundario{
+    align-items: center;
+    
+}
+.secundario__imagem {
+    width: 80%;
+    margin: 0 6em;
+}
+
+.secundario__elementos {
+    text-align: left;
+    margin: 0 10em;
+}
+
+.secundario__texto {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.secundario_menor{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--cinza);
+}
+
+.botao_terciario{
+    text-align: center;
+    margin-right: 25em;
+}
+.plataformas_opcoes{
+    grid-template-columns: 100%;
+    margin-left: 19em;
+}
+
+.container__rodape {
+    text-align: center;
+    color: var(--branco);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--cinza);
+
+}
+
+.texto__rodape {
+    font-size: 14px;
+    padding-bottom: 1em;
+    margin: 0 20em;
+
+}
+
+.container__links {
+    margin: 1.5em;
+}
+
+.link {
+    color: var(--branco);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 0.5em;
+}
+.link:hover {
+    color: var(--branco);
+    border: 2px solid var(--azul-botao);
+    border-radius: 5px;
+    padding: 0.5em;
+}
